@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/8412432/pexels-photo-8412432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center ;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100px;
+}
+header #inputs{
+    margin-left: 120px;
+}
+header  ul{
+ list-style: none;
+}
+
+header  li{
+    font-size: 1.5em;
+    text-align: center;
+    padding-right: 8px;
+    cursor: pointer;
+    transition: 700ms; 
+    padding: 8px;
+}
+header li:hover{
+ background: silver;
+ color: rgb(255, 64, 0);  
+}
+main{
+    min-height: 800px;
+}
+
+main .container .card{
+    cursor: pointer;
+    background-color:rgba(147, 148, 147, 0.593) ;
+    position: relative;
+    height: 460px;
+    transition: 700ms;
+}
+main .container .card:hover{
+    transform: scale(1.05);
+}
+/* main .badge{
+    position: absolute;
+    bottom: -10px; 
+    right: -2px;
+    transition:700ms;
+    background: white;
+    border-radius: 0px;
+    width: 101%;
+    font-size: large;
+} */
+main .badge:hover{
+  background: rgb(13, 110, 253);
+}
+main .information{
+    font-size: x-large;
+}
+main #border p{
+    
+    max-width: 100%;
+    min-height: 80px;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#id_select{
+    border-radius: 0%;
+}
+
+.Footer .container{
+    height: 100px;
+ 
+}
+
+.Footer a{
+   padding: 4px;
+   transition: 500ms;
+}
+
+
+@media screen and(max-width:992px) {
+    header .nav{
+        font-size: small;
+    }
+    main .box{
+        height: 200px;
+    }
+    header #inputs{
+        margin-left: 120px;
+    }
+   
+}
+@media screen and (max-width:768px) {
+    main .box{
+        height: 480px;
+    }
+    header .nav{
+        font-size: x-small;
+    }
+    footer {
+        text-align: center;
+        min-height: 200px;
+       padding: 2px;
+    }
+
+}
+@media screen and (max-width:400px) {
+    header .row li{
+        padding: 5px;
+      }
+    }
